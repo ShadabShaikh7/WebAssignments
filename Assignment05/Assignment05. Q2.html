@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Structure</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        header{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 30px;
+            text-align: center;
+            font-size: 30px;
+            font-family: sans-serif;
+            color: rgb(11, 11, 11);
+            font-weight: bold;
+        }
+        nav{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 15px;
+            background-color: rgb(255, 255, 255);
+        }
+        nav>a{
+            display: inline-block;
+            padding: 10px;
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-family: sans-serif;
+        }
+        section>div{
+            height: 500px;
+            width: 49%;
+            display: inline-block;
+            margin: 5px 5px;   
+        }
+        #rightbox{
+            height: 400px;
+            width: 58%;
+            display: inline-block;
+            margin: 2px;
+        }
+        #Leftbox{
+            width: 40%;
+            height: 400px;
+            display: inline-block;
+            margin: 2px;
+
+        }
+        #rightbox>div{
+            height: 32%;
+            margin: 2px;
+        }
+        #Trowdiv>main{
+            width: 320px;
+            height: 96%;
+            margin: 2px;
+            text-align: center;
+            background-color: grey;  
+        }
+        footer{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 30px;
+            color: rgb(0, 0, 0);
+            margin: 5px;
+            text-align: center;  
+        }
+        img{
+            height: 100%;
+            margin-left: 20%;
+        }
+        #rightbox>div{
+            background-color: rgb(157, 154, 154);
+        }
+        table{
+            margin: 2px;
+            height: 99%;
+            width: 99%;
+            text-align: center;
+        }
+        .Text{
+            background-color: rgb(171, 165, 165);
+        }
+        .title{
+            background-color: grey;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        WEBx86
+    </header>
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact Us</a>
+        <a href="">Help</a>
+    </nav>
+    <section>
+        <div><img src="../../Assets/html.jpg"></div>
+        <div><img src="../../Assets/css.jpg"></div>
+    </section>
+    <main>
+        <div id="Leftbox"><img src="../../Assets/javascript.jpg"></div>
+        <div id="rightbox">
+            <table border="2px solid" style="border-collapse:collapse ;">
+                <tr>
+                    <th class="title">HTML</th>
+                    <td class="Text">HTML is the standard markup language for Web pages.<br>
+                        HTML is easy to learn - You will enjoy it!</td>
+                    
+                </tr>
+                <tr>
+                    <th class="title">CSS</th>
+                    <td class="Text" >CSS is the language we use to style an HTML document.<br>
+                        CSS describes how HTML elements should be displayed
+
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <th class="title">JS</th>
+                    <td class="Text">JavaScript is the world's most popular programming language.<br>
+                        JavaScript is easy to learn.</td>
+                    
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        Copyright@
+    </footer>
+</body>
+</html>
