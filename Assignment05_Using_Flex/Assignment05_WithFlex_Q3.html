@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment05_Problem03_Withflex</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0px;
+        }
+        #section01{
+            display: flex;
+            background: linear-gradient(to right,rgb(101, 39, 164),rgb(26, 142, 219));
+        }
+        #section01>div{
+            height: 100px;
+        }
+        #div01{
+            flex-grow: 3;
+        }
+        #div02{
+            flex-grow: 1;
+            background-image: url(../Assets/WEBx86\ Logo\ Rectangle.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        nav{
+            display: flex;
+            padding: 15px;
+            margin: 10px;
+            font-size: 20px;
+        }
+        nav>a{
+            padding: 10px;
+            margin: 5px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-family: sans-serif;
+        }
+        #section02{
+            display: flex;
+            box-sizing: border-box;
+        }
+        #sidebar{
+            flex-grow: 1;
+            padding: 15px;
+            display: flex;
+            color: white;
+            font-size: 20px;
+            flex-direction: column;
+            background-color: rgb(155, 91, 219);
+        }
+        #sidebar>main{
+            margin-top: 4px
+        }
+        #Leftitems01{
+            height: 400px;
+            background-image: url(../Assets/Git.jpg);
+            background-size: 100%;
+        }
+        .Leftitems02{
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #mainContent{
+            flex-grow: 7;
+            padding: 9px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            background-color: rgb(101, 39, 164);
+        }
+        #mainContent>main{
+            border: 1px solid rgb(255, 255, 255);
+        }
+        #main01{
+            height:400px;
+            margin-top: 8px;
+            background-image: url(../Assets/web\,jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .lrow{
+            height: 180px;
+            display: flex;
+            padding: 3px;
+        }
+        #special{
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+        .lrow>div{ 
+            height: 100%;
+        }
+        .row01{
+            flex-grow: 1;
+            background-color: rgb(26, 142, 219);
+        }
+        .row02{
+            flex-grow: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            inline-size: 100px;
+            background-color: rgb(94, 189, 233);
+        }
+        #img01{
+            background-image: url(../Assets/html.jpg);
+            background-size: 100% 100%;
+        }
+        #img02{
+            background-image: url(../Assets/css.jpg);
+            background-size: 100% 100%;
+        }
+        #img03{
+            background-image: url(../Assets/javascript.jpg);
+            background-size: 100% 100%;
+        }
+        #img04{
+            background-image: url(../Assets/Python.jpg);
+            background-size: 100% 100%;
+        }
+        footer{
+            height: 150px;
+            box-sizing: border-box;
+            padding: 20px;
+            color: white;
+            background: linear-gradient(to right,rgb(101, 39, 164),rgb(26, 142, 219));
+        }
+        footer>div{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section id="section01">
+        <div id="div01">
+            <nav>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Career</a>
+                <a href="">Contact Us</a>
+            </nav>
+        </div>
+        <div id="div02"></div>
+    </section>
+    <section id="section02">
+        <div id="sidebar">
+            <main id="Leftitems01"></main>
+            <main class="Leftitems02"> It is easy to contribute to open source project via Github</main>
+            <main class="Leftitems02">It helps to create an excellent document </main>
+            <main class="Leftitems02">It allow to get out there in front of public</main>
+            <main class="Leftitems02">You can changes in your code across version</main>
+        </div>
+        <div id="mainContent">
+            <main id="main01"></main>
+            <main id="special" style="border:none"><p>Web Development</p></main>
+            <main class="lrow">
+                <div class="row01" id="img01"></div>
+                <div class="row02">HTML is the standard markup  language for Web pages. 
+                    HTML is easy to learn - You will enj!</div>
+            </main>
+            <main class="lrow">
+                <div class="row01" id="img02"></div>
+                <div class="row02">CSS is the language we use to style an HTML document.</div>
+            </main>
+            <main class="lrow">
+                <div class="row01" id="img03"></div>
+                <div class="row02">JavaScript is the world's most  popular programming language.</div>
+            </main>
+            <main class="lrow">
+                <div class="row01" id="img04"></div>
+                <div class="row02">Bootstrap is the most popular HTML, CSS, 
+                    andJavaScript framework for mobile-first websites.</div>
+            </main>
+        </div>
+    </section>
+    <footer>
+        <div class="footer01">Shadab Ajam Shaikh</div>
+        <div class="footer01">Karad,Maharashtra</div>
+        <div class="footer01">7744991737</div> 
+    </footer>
+</body>
+</html>

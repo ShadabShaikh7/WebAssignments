@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment05_Problem02_Withflex</title>
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+        header{
+            border: 1px solid rgb(0, 0, 0);
+            display: flex;
+            height: 150px;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-family: sans-serif;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        #section01>div{
+            border: 1px solid rgb(0, 0, 0);
+            height: 100px;
+            margin-top: 5px;
+        }
+        #section02{
+            border: 1px solid rgb(0, 0, 0);
+            height: 500px;
+            margin-top: 8px;
+            display: flex;
+            padding: 8px 8px;
+            gap: 3px;
+        }
+        #section02>div{
+            border: 1px solid rgb(0, 0, 0);
+            height: 100%;
+            flex-grow: 1;    
+        }
+        nav{
+            display: flex;
+            padding: 20px;
+            margin: 10px;
+            font-size: 20px;
+            font-family: sans-serif;
+            
+        }
+        nav>a{
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        #img01{
+            background-image: url(../Assets/html.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        #img02{
+            background-image: url(../Assets/css.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        #section03{
+            display: flex;
+            border: 1px solid rgb(0, 0, 0);
+            height: 450px;
+            margin-top: 8px;
+            padding: 8px;
+            gap: 3px;   
+        }
+        #section03>div{
+            border: 1px solid rgb(0, 0, 0);
+        }
+        #left{
+            flex-grow: 7;
+            background-image: url(../Assets/javascript.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        #right{
+            flex-grow: 6;
+            display: flex;
+            flex-direction: column;
+            padding: 8px 5px;
+            gap: 3px;
+        }
+        #right>main{
+            border: 1px solid rgb(0, 0, 0);
+            height: 100%;
+            display: flex;
+            
+        }
+        main>div{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+           
+        .ThreeRow01{
+            flex-grow: 1;
+            background-color: grey;    
+        }
+        .ThreeRow02{
+            flex-grow: 2;
+            background-color: rgb(201, 196, 196);
+        }
+        #threeRow01{
+            padding: 0px 10px;
+        }
+        footer{
+            border: 1px solid black;
+            height: 100px;
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        WEBx86
+    </header>
+    <section id="section01">
+        <div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Help</a>
+            </nav>
+        </div>
+    </section>
+    <section id="section02">
+        <div id="img01"></div>
+        <div id="img02"></div>
+    </section>
+    <section id="section03">
+        <div id="left"></div>
+        <div id="right">
+            <main>
+                <div class="ThreeRow01">HTML</div>
+                <div class="ThreeRow02">HTML is the standard markup language for Web pages.<br>
+                    HTML is easy to learn - You will enjoy it!</div>
+            </main>
+            <main>
+                <div class="ThreeRow01" id="threeRow01">CSS</div>
+                <div class="ThreeRow02">CSS is the language we use to style an HTML document.<br>
+                    CSS describes how HTML elements should be displayed</div>
+            </main>
+            <main>
+                <div class="ThreeRow01">JavaScript</div>
+                <div class="ThreeRow02">JavaScript is the world's most popular programming language.<br>
+                    JavaScript is easy to learn.</div>
+            </main>
+        </div>
+    </section>
+    <footer>
+        Footer 
+    </footer>
+</body>
+</html>
