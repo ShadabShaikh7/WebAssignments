@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using_Flex</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+            background-color: white;
+        }
+        #section01{
+            display: flex;
+            background-color: rgb(66, 160, 231);
+        }
+        #section01>div{
+            height: 100px; 
+        }
+        #div01{
+            flex-grow: 2;
+            background-image: url(../../Assets/WEBx86\ Logo\ Rectangle.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        #div02{
+            flex-grow: 4;
+            display: flex;
+            justify-content: right;
+        }
+        nav{
+            display: flex;
+            width: 600px;
+            padding: 10px;
+            justify-content: right;
+        }
+        nav>a{
+            padding: 15px;
+            margin: 10px;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        #section02{
+            background-color: rgb(145, 199, 240);
+        }
+        #section02>div{
+            height: 500px;
+            text-align: center;
+        }
+        #div03>main{
+            padding: 150px 10px;
+        }
+        button{
+            padding: 15px;
+            border-radius: 15px;
+            border: none;
+        }
+        #section03{
+            background-color: rgb(66, 160, 231);
+        }
+        #section03>div{
+            height: auto;
+            padding: 30px 40px;
+            text-align: justify;
+        }
+        #section04{
+            display: flex;
+            gap: 5px;
+            background-color: rgb(145, 199, 240);
+        }
+        #section04>div{
+            border: 1px solid rgb(255, 255, 255);
+            height: auto;
+            flex-grow: 1;
+            padding: 30px 40px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <section id="section01">
+        <div id="div01"></div>
+        <div id="div02">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Career</a>
+                <a href="#">Contact US</a>
+            </nav>
+        </div>
+    </section>
+    <section id="section02">
+        <div id="div03">
+            <main>
+                <h1>WEBx86 Infotech</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus molestiae excepturi incidunt quasi, ab dignissimos deleniti cupiditate delectus eligendi corrupti vitae </p>
+                <button type="submit">Visit WEBx86 Infotech</button>
+            </main>
+        </div>
+    </section>
+    <section id="section03">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+        </div>
+            
+    </section>
+    <section id="section04">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+
+        </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+
+        </div>
+    </section>
+    <section id="section03">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+            Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita ipsa aliquam totam! Cum, eveniet. Sit consequatur numquam inventore earum, fugit impedit quaerat, labore optio cum veritatis culpa quidem. Veniam.
+        </div>
+</body>
+</html>

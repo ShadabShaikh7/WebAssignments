@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using_Flex</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+            background-color: rgb(64, 117, 64);
+        }
+        #section01{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: 300px 300px;
+            background-color: rgb(23, 67, 23);
+            color: white;
+        }
+        #Rowspa{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        #div01{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+        }
+        #div02{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+        }
+        #div02>main{
+            height: 100px;
+            width: 500px;
+            text-align: center;
+        }
+        #main02{
+            padding: 20px;
+        }
+        #nav01{
+            padding: 10px;
+            margin: 10px;
+        }
+        #nav01>a{
+            margin: 5px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            background-color: rgb(64, 117, 64);
+            padding: 10px;
+            border-radius: 10px;  
+        }
+        #Rowspa{
+            padding: 10px 450px;
+            text-align: justify;
+            font-family: sans-serif;
+        }
+        button{
+            margin-left: 160px;
+            margin-top: 40px;
+            padding: 20px;
+            width: 300px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: rgb(64, 117, 64);
+        }
+        #section02{
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 10px;  
+        }
+        #section02>div{
+           
+            height: auto;
+            width: 350px;
+            padding: 10px;
+            font-family: sans-serif;
+        }
+        #section03{
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+        #section03>div{
+            height: 250px;
+            width: 350px;
+            
+        }
+        #section04{
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+        #section04>div{
+            height: auto;
+            width: 350px;
+            padding: 15px;
+            font-family: sans-serif;
+        }
+        #img01{
+            background-image: url(../../Assets/Dr.-Vivek-Bindra.jpg);
+            background-size: 100% 100%;
+        }
+        #img02{
+            background-image: url(../../Assets/maxresdefault.jpg);
+            background-size: 100% 100%;
+        }
+        #img03{
+            background-image: url(../../Assets/jay\ shety.jpg);
+            background-size: 100% 100%;
+        }
+        footer{
+            height: 100px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            margin-top: 10px;
+            background-color: rgb(23, 67, 23);
+            color: white;
+        }
+        #nav02{
+            display: flex;
+            width: 300px;
+            height: 70px;
+            margin-right: 50px;
+            font-size: 20px;
+        }
+        #nav02>div{
+            padding: 10px;
+            margin: 10px;  
+        } 
+    </style>
+</head>
+<body>
+    <section id="section01">
+        <div id="div01">
+            <main><h2>Styles</h2>Conference</main>
+        </div>
+        <div id="div02">
+            <main>
+                <h3>5th to 7th February 2023,Flex City</h3>
+            </main>
+            <main id="main02">
+                <nav id="nav01">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Career</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+            </main>
+        </div>
+        <div id="Rowspa">
+            <p>Since 1947, we have brought together more than 37,000 Fellows from over 170 countries to inspire new thinking and transformative solutions to the worlds most pressing challenges. We are building upon this momentum of innovation and partnership to motivate leaders and to help forge the next generation of problem-solvers our world requires. </p>
+            <button type="submit">Register Now</button>
+        </div>
+    </section>
+    <section id="section02">
+        <div><h3>Speakers</h3> </div>
+        <div><h3>Schedule</h3> </div>
+        <div><h3>Venue</h3> </div>
+    </section>
+    <section id="section03">
+        <div id="img01"></div>
+        <div id="img02"></div>
+        <div id="img03"></div>
+    </section>
+    <section id="section04">
+        <div><h3>World Class Speakers</h3><p>People mentioned in this list are experts <br>in motivation and  have spent their careers inspiring people at seminars, through online classes and with books.Watching these top motivational speakers interact with their <br> audience is a great way to improve your own communication skills.</p> </div>
+        <div>
+            <h3>Three Inspiring Days</h3>
+            <p>5th February 2023 - Dr.Vivek Bindra</p>
+            <p>6th February 2023 - Nick Vujicic</p>
+            <p>7th February 2023 - Jay Shetty</p>
+         </div>
+        <div><h3>The Venue</h3><p>Main Road Delhi,Flex City</p> </div>
+    </section>
+    <footer>
+        <nav id="nav02">
+            <div>Home</div>
+            <div>Carrer</div>
+            <div>About</div>
+            <div>Help</div>
+        </nav>
+    </footer>
+</body>
+</html>

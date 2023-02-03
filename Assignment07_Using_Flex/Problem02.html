@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using_Flex</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+            background-color: rgb(30, 28, 28);
+        }
+        #section01{
+            display: flex;
+            justify-content: center;
+        }
+        #section01>div{
+            height: auto;
+            width: 80%;
+            background: linear-gradient(to bottom,rgb(86, 209, 209) 5% ,black );
+        }
+        #section02{
+            display: flex;
+            gap: 15px;
+        }
+        #section02>div{
+            border: 2px solid rgb(0, 0, 0);
+            height: 50px;
+            flex-grow: 1;
+            margin-top: 5px;
+            text-align: center;  
+        }
+        #section03{
+            display: grid;
+            grid-template-columns: 70% auto;
+            grid-template-rows: 250px 250px;
+            margin-top: 10px;
+            gap: 5px;
+        }
+        #section03>div{
+            border: 2px solid rgb(0, 0, 0);   
+        }
+        #div01{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../../Assets/pexels-chan-walrus-958545.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            color: rgb(255, 255, 255);
+            font-size: 50px;
+        }
+        .TextC{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+       .TextC>main{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            font-size: 17px;
+       }
+       #section04{
+        display: flex;
+        gap: 10px;
+       }
+       #section04>div{
+        border: 2px solid rgb(0, 0, 0);
+        height: 180px;
+        flex-grow: 1;
+        margin-top: 20px;
+       }
+       .TextC01{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .TextC01>main{
+        height: 160px;
+        width: 200px;
+        text-align: justify;
+       }
+       #section05{
+        border: 2px solid rgb(0, 0, 0);
+        height: 400px;
+        margin-top: 20px;
+        display: flex;
+       }
+       #Sec03div01{
+        flex-grow: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       #Sec03div02{
+        flex-grow: 2;
+       }
+       #Sec03div01>main{
+        height: 90%;
+        width: 90%;
+        background-image: url(../../Assets/biryani.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+       }
+       #Sec03div02{
+        display: flex;
+        align-items: center;
+       }
+       #Sec03div02>main{
+        inline-size: 400px;
+       }
+       button{
+        padding: 15px;
+        width: 200px;
+        border-radius: 15px;
+        border: none;
+       }
+       #section06{
+        display: flex;
+       }
+       #section06>div{
+        height: 15px;
+        flex-grow: 1;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 10px;
+       }
+       .background{
+            background-color: black;
+       }
+       #section6{
+        display: grid;
+        gap: 15px;
+        margin-top: 25px;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 200px 200px;
+       }
+       #img01{
+        background-image: url(../../Assets/ice\ Cream.jpg);
+        background-size: 100% 100%;
+       }
+       #img02{
+        background-image: url(../../Assets/img02.jpg);
+        background-size: 100% 100%;
+       }
+       #img03{
+        background-image: url(../../Assets/img03.jpg);
+        background-size: 100% 100%;
+       }
+       #img04{
+        background-image: url(../../Assets/img04.jpg);
+        background-size: 100% 100%;
+       }
+       #img05{
+        background-image: url(../../Assets/img05.jpg);
+        background-size: 100% 100%;
+       }
+       footer{
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        gap: 10px;
+        background: linear-gradient(to right,rgb(72, 158, 158) ,black 65%);
+       }
+       footer>div{
+        height: 90%;
+        width: 400px;
+       }
+       #Lastdiv{
+        background-image: url(../../Assets/Last.jpg);
+        background-size: 100% 110%;
+       }
+       #special{
+        color: white;
+       }
+    </style>
+</head>
+<body>
+    <section id="section01">
+        <div>
+            <section id="section02">
+                <div><h3>Tacos</h3></div>
+                <div><h3>Beer</h3></div>
+                <div><h3>Wines</h3></div>
+                <div><h3>Deserts</h3></div>
+                <div><h3>Reservation</h3></div>
+            </section>
+            <section id="section03">
+                <div id="div01">
+                    <h3>Hotel Galaxy</h3>
+                </div>
+                <div id="div02" class="TextC">
+                    <main>
+                        <h2>$1.99</h2><p>Tacos</p>
+                    </main>    
+                </div>
+                <div id="div04" class="TextC">
+                    <main>
+                        <h2>$1.99</h2><p>Momose</p>
+                    </main>
+                </div>
+            </section>
+            <section id="section04">
+                <div class="TextC01">
+                    <main>
+                        <h2>Tacose</h2>
+                        <p>A taco is a traditional Mexican food consisting of a small hand-sized corn- or wheat-based tortilla topped with a filling.</p>
+                    </main>
+                </div>
+                <div class="TextC01">
+                    <main>
+                        <h2>Pizza</h2>
+                        <p>Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened wheat-based topped with tomatoes</p>
+                    </main>
+                </div>
+                <div class="TextC01">
+                    <main>
+                        <h2>Wine</h2>
+                        <p>Wine is an alcoholic drink typically made from fermented grapes. Yeast consumes the sugar in the grapes and converts</p>
+                    </main>
+                </div>
+                <div class="TextC01">
+                    <main>
+                        <h2>Burger</h2>
+                        <p>Hamburger, a sandwich consisting of one or more cooked beef patties, placed inside a sliced bread roll or bun roll.</p>
+                    </main>
+                </div>
+                <div class="TextC01">
+                    <main>
+                        <h2>Beer</h2>
+                        <p>Beer is the oldest and most widely consumed type of alcoholic drink in the world, and the third most popular drink .</p>
+                    </main>
+                </div>
+            </section>
+            <section id="section05">
+                <div id="Sec03div01">
+                    <main></main>
+                </div>
+                <div id="Sec03div02">
+                    <main>
+                        <h2>Haydrabadi Biryani</h2>
+                        <p>Hyderabadi Biryani is one of the most popular Biryanis in India. Also known as Hyderabadi Dum Biryani, it is a style of Biryani from Hyderabad. Originating in the kitchen of the Nizams of Hyderabad, it has a blend of both Hyderabadi and Mughlai cuisines.</p>
+                        <button type="submit">Learn More</button>
+                    </main>
+                </div>
+            </section>
+            <section id="section06">
+                <div class="background"></div>
+                <div id="special">Specials</div>
+                <div class="background"></div>
+            </section>
+            <section id="section6">
+                <div id="img01"></div>
+                <div id="img02"></div>
+                <div id="img03"></div>
+                <div id="img04"></div>
+                <div id="img05"></div>
+            </section>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p>Sandwich</p>
+            <p>Burger</p>
+            <p>Dhosa</p>
+            <p>Idli</p>
+        </div>
+        <div id="Lastdiv">
+
+        </div>
+    </footer>
+</body>
+</html>
+
