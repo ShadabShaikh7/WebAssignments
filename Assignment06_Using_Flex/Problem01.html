@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem01</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #section00{
+            display: flex;
+        }
+        #section00>div{
+            height: 100px;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 5px;
+            font-size: 20px;
+        }
+        #NavImg{
+            height: 100px;
+            width: 180px;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        #section01{
+            display: flex;
+            width: 70%;
+            height: 250px;
+        }
+        #section01>div{
+            border: 3px solid red;
+            height: auto; 
+            border-style: dotted;
+        }
+        #div01{
+            flex-grow: 1;
+        }
+        #div03{
+            flex-grow: 1;
+        }
+        #div02{
+            flex-grow: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1,p{
+            margin: 0px;
+            font-size: 50px;
+        }
+        #middle{
+            width: 300px;
+        }
+        #nav02{
+            text-align: right;
+        }
+        img{
+            width: 60%;
+            height: 95%;
+            margin-left: 40px;
+        }
+        a{
+            padding: 10px;
+        }
+        #section02{
+            height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        #section02>main{
+            height: 60%;
+            width: 45%;
+            display: grid;
+            gap: 5px;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-rows: auto auto auto auto auto;
+        }
+        main>div{
+            border: 2px solid rgb(255, 0, 0);
+            width: 150px;
+        }
+        #D02{
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+        #D07{
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+        #D23{
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+        .img{
+            background-image: url(../../Assets/WEBx86\ Logo\ Circle.png);
+            background-repeat: no-repeat;
+            background-size: 50% 100%;
+            text-align: center;
+            background-position-x: center;
+        }
+        .RemoveB{
+            border: none;
+        }
+        #section03{
+            height: 300px;
+            display: flex;
+            padding: 10px;
+            gap: 10px;
+        }
+        #tablecol01{
+            flex-grow: 4;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+        #tablecol02{
+            flex-grow: 5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+        }
+        .Limg{
+            width: 40%;
+            height: 100%;
+           margin-left: 70px;
+        }
+        #tablecol02>div{
+            border: 4px solid rgb(0, 0, 0);
+            height: 85px;
+            width: 250px;
+            border-radius: 50px;
+            border-style: dotted;
+        }
+        #table02{
+            width: 800px;
+            height: 200px;
+            padding: 0px;
+            margin-bottom: 10px;
+        }
+        #Lorem{
+            width: 700px;
+        }
+        #img0301{
+            height: 40px;
+            width: 80px;
+            margin-left: 10px;
+        }
+        #img0302{
+            height: 40px;
+            width: 80px;
+            margin-left: 10px;
+        }
+        #img0303{
+            height: 50px;
+            width: 80%;
+            margin-left: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <section id="section00">
+        <div>
+            <nav>
+                <a href="">Home</a>
+                <a href="">Course</a>
+            </nav>
+        </div>
+        <div>
+            <img src="../../Assets/WEBx86 Logo Rectangle.jpg" alt="" id="NavImg">
+        </div>
+        <div>
+            <nav>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </nav>
+        </div>
+    </section>
+    <hr>
+    <main>
+        <section id="section01">
+            <div id="div01"></div>
+            <div id="div02">
+                
+                    <h1>WEBx86</h1>
+                    <p>Infotech</p>
+            </div>
+            <div id="div03"></div>
+        </section>
+    </main>
+    <section id="section02">
+        <main>
+            <div class="img"></div>
+            <div id="D02" class="RemoveB"></div>
+            
+            <div class="img"></div>
+            <div class="img"></div>
+            <div id="D07" class="RemoveB"></div>
+            
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="RemoveB"></div>
+            <div class="img"></div>
+            <div class="RemoveB"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="RemoveB"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div id="D23" class="RemoveB"></div>
+            
+            <div class="img"></div>
+        </main>
+    </section>
+    <section id="section03">
+        <div id="tablecol01">
+            <table border="1px solid" id="table02">
+                <tr>
+                    <td id="Lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cumque commodi quia accusantium tempora et, perferendis perspiciatis quae excepturi similique laboriosam, sapiente officiis iusto quasi! </td>
+                    <td>
+                        <img src="../../Assets/WEBx86 Logo Rectangle.jpg" alt="" id="img0301">
+                    </td>
+                
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nesciunt illum explicabo atque dolore veritatis ducimus debitis harum non, velit voluptatibus omnis culpa voluptate corrupti doloremque, ex, nisi </td>
+                    <td><img src="../../Assets/WEBx86 Logo Rectangle.jpg" alt="" id="img0302"></td>
+                    
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, sit consequuntur est reiciendis reprehenderit id similique quae earum ipsam officia fuga odit eligendi nihil rem quam sint hic maiores unde.velit voluptatibus omnis culpa voluptate corrupti doloremque, ex, nisi eius id?</td>
+                    <td><img src="../../Assets/WEBx86 Logo Rectangle.jpg" alt="" id="img0303"></td>
+                    
+                </tr>
+            </table>
+        </div>
+        <div id="tablecol02">
+            <div><img src="../../Assets/WEBx86 Logo Circle.png" alt="" class="Limg"></div>
+            <div><img src="../../Assets/WEBx86 Logo Circle.png" alt="" class="Limg"></div>
+        </div>
+    </section>
+</body>
+</html>
